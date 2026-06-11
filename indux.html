@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading" >Body Mass Index (BMI) Calculator</h1>
+    
+
+    <!-- WEIGHT AND HEIGHT INPUTS  -->
+    YOUR HEIGHT (CM) : 
+    <input type="number" class="input"
+    id="HEIGHT" value="180" placeholder="Enter Your Height In (CM)">
+
+ YOUR WEIGHT (KG) : 
+    <input type="number" class="input"
+    id="WEIGHT" value="80" placeholder="Enter Your WEIGHT In (KG)">
+
+<!-- compute BMI Button -->
+
+<button id="btn" >COMPUTE BMI</button>
+
+<input disabled type="text" class="input" id="BMI-RESULT">
+
+<h4 class="info-text" >Weight Condition: <span id="weight-condition"></span></h4>
+
+<div id="bmi-react-root"></div>
+
+ </div>
+
+
+ <script src="script.js"></script>
+ 
+ <script type="text/babel" src="bmi-components.js"></script>
+
+</body>
+</html>
